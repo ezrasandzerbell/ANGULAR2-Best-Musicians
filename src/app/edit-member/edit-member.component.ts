@@ -11,7 +11,7 @@ import { Member } from '../member.model'
 export class EditMemberComponent implements OnInit {
   @Input() selectedMember;
   constructor(private memberService: MemberService) { }
-
+  editFormShow = false;
   ngOnInit() {
   }
   beginUpdatingMember(memberToUpdate){
@@ -24,7 +24,7 @@ export class EditMemberComponent implements OnInit {
       this.memberService.deleteMember(memberToDelete);
     }
   }
-  editFormShow = false;
+
 
   editClicked() {
     this.editFormShow = true;

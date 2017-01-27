@@ -1,13 +1,11 @@
-<div class="row">
-  <div class="col-md-9">
-    <div>
-      <h3>{{(memberToDisplay | async)?.name}}</h3>
-      <img src= "{{(memberToDisplay | async)?.image}}" class="project-image"/>
-      <h4>{{(memberToDisplay | async)?.country}} / {{(memberToDisplay | async)?.yearsActive}}</h4>
-      <div class="chip">{{(memberToDisplay | async)?.genre}}</div>
-      <br><br>
-      <p>Music Awards: {{(memberToDisplay | async)?.awards}}</p>
-      <p>{{(memberToDisplay | async)?.details}}</p>
-    </div>
+<div class="row  centerContent">
+  <div class="col m 8  centerContent">
+    <h3>{{(memberToDisplay | async)?.name}}</h3>
+    <img src="{{(memberToDisplay | async)?.image}}" class="project-image"/>
+    <h4>{{(memberToDisplay | async)?.country}} / {{(memberToDisplay | async)?.yearsActive}}</h4>
+    <div class="chip">{{(memberToDisplay | async)?.genre}}</div>
+    <br><br>
+    <h5>Music Awards: {{(memberToDisplay | async)?.awards}}</h5>
+    <p>{{(memberToDisplay | async)?.details}}</p>
   </div>
 </div>

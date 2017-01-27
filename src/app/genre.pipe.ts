@@ -24,7 +24,7 @@ export class GenrePipe implements PipeTransform {
           }
         }
         return output;
-      } else if (desiredGenre === "Pop") {
+      } else if (desiredGenre === "Popular") {
         for (var i = 0; i < input.length; i++) {
           if (input[i].genre === desiredGenre) {
             output.push(input[i]);

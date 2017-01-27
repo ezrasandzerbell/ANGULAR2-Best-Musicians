@@ -1,0 +1,10 @@
+.project-image {
+  max-width: 100%;
+}
+
+.centerContent {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

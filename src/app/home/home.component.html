@@ -4,7 +4,7 @@
       <option value="" disabled selected>Select Genre</option>
       <option value="Classical">Classical</option>
       <option value="Jazz">Jazz</option>
-      <option value="Pop">Pop</option>
+      <option value="Popular">Popular</option>
     </select>
   </div>
 </div>
@@ -13,8 +13,8 @@
 <div class="row">
   <div class="col s4" *ngFor="let member of members | async | genre:filterByGenre">
     <div class="card">
-      <div class="card-image hover" (click)="goToDetailPage(member)">
-        <img src={{member.image}} class="cardImageStyle">
+      <div class="card-image hover hoverable cardImageStyle" (click)="goToDetailPage(member)">
+        <img src={{member.image}}>
       </div>
       <div class="card-content">
         <span class="card-title">{{member.name}}</span>

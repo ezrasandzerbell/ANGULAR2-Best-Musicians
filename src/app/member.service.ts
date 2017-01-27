@@ -35,7 +35,6 @@ export class MemberService {
                                 image: localUpdatedMember.image,
                                 yearsActive: localUpdatedMember.yearsActive,
                                 country: localUpdatedMember.country,
-                                genre: localUpdatedMember.genre,
-                                video: localUpdatedMember.video});
+                                genre: localUpdatedMember.genre});
   }
 }
