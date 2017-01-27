@@ -17,6 +17,7 @@ export class EditMemberComponent implements OnInit {
   beginUpdatingMember(memberToUpdate){
     console.log(memberToUpdate);
     this.memberService.updateMember(memberToUpdate);
+    this.editFormShow = false;
   }
 
   editFormShow = false;

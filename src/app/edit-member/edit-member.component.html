@@ -20,35 +20,34 @@
     <div class="row">
       <div class="input-field col s6">
         <input type="text" [(ngModel)]="selectedMember.name">
-        <label>Name</label>
-      </div>
+            </div>
       <div class="input-field col s6">
         <input type="text" [(ngModel)]="selectedMember.awards">
-        <label>Awards</label>
+
       </div>
     </div>
     <div class="row">
       <div class="input-field col s2">
         <input type="text" [(ngModel)]="selectedMember.yearsActive">
-        <label>Years Active</label>
+
       </div>
       <div class="input-field col s2">
         <input type="text" [(ngModel)]="selectedMember.country">
-        <label>Country of Origin</label>
+
       </div>
       <div class="input-field col s4">
         <input type="text" [(ngModel)]="selectedMember.video">
-        <label>Video Embed Link</label>
+
       </div>
       <div class="input-field col s4">
         <input type="text" [(ngModel)]="selectedMember.image">
-        <label>Image Url</label>
+
       </div>
     </div>
       <div class="row">
         <div class="input-field col s12">
           <input type="text" [(ngModel)]="selectedMember.details">
-          <label>Artist Description</label>
+          
         </div>
       </div>
     <button class="submitForm btn waves-effect waves-light" (click)="beginUpdatingMember(selectedMember)">Submit</button>
