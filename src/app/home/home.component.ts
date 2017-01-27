@@ -12,8 +12,9 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 })
 export class HomeComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
+  filterByGenre: string = "";
   currentRoute: string = this.router.url;
-  
+
   constructor(private router: Router, private memberService: MemberService) { }
 
   ngOnInit() {
@@ -24,4 +25,7 @@ export class HomeComponent implements OnInit {
      this.router.navigate(['members', clickedMember.$key]);
    };
 
+  onChange(optionFromMenu) {
+  this.filterByGenre = optionFromMenu;
+}
 }

@@ -1,10 +1,17 @@
-<div class="">
-  <h1></h1>
+<div class="row">
+  <div class="input-field col s12">
+    <select (change)="onChange($event.target.value)">
+      <option value="" disabled selected>Select Genre</option>
+      <option value="Classical">Classical</option>
+      <option value="Jazz">Jazz</option>
+      <option value="Pop">Pop</option>
+    </select>
+  </div>
 </div>
 
 
 <div class="row">
-  <div class="col s4" *ngFor="let member of members | async">
+  <div class="col s4" *ngFor="let member of members | async | genre:filterByGenre">
     <div class="card">
       <div class="card-image hover" (click)="goToDetailPage(member)">
         <img src={{member.image}} class="cardImageStyle">
