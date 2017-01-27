@@ -18,6 +18,7 @@
         <div class="editContainer" *ngIf="currentRoute === '/admin'">
           <app-edit-member [selectedMember]="member"></app-edit-member>
         </div>
+        <br>
         <a class="hover" (click)="goToDetailPage(member)">View Member Details</a>
       </div>
     </div>

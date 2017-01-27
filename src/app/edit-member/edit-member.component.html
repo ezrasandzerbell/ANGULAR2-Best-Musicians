@@ -27,19 +27,15 @@
       </div>
     </div>
     <div class="row">
-      <div class="input-field col s2">
+      <div class="input-field col s3">
         <input type="text" [(ngModel)]="selectedMember.yearsActive">
 
       </div>
-      <div class="input-field col s2">
+      <div class="input-field col s3">
         <input type="text" [(ngModel)]="selectedMember.country">
 
       </div>
-      <div class="input-field col s4">
-        <input type="text" [(ngModel)]="selectedMember.video">
-
-      </div>
-      <div class="input-field col s4">
+      <div class="input-field col s6">
         <input type="text" [(ngModel)]="selectedMember.image">
 
       </div>
@@ -47,7 +43,7 @@
       <div class="row">
         <div class="input-field col s12">
           <input type="text" [(ngModel)]="selectedMember.details">
-          
+
         </div>
       </div>
     <button class="submitForm btn waves-effect waves-light" (click)="beginUpdatingMember(selectedMember)">Submit</button>

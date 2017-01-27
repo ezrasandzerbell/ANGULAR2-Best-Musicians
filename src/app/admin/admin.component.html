@@ -27,19 +27,15 @@
       </div>
     </div>
     <div class="row">
-      <div class="input-field col s2">
+      <div class="input-field col s3">
         <input type="text" #yearsActive>
         <label>Years Active</label>
       </div>
-      <div class="input-field col s2">
+      <div class="input-field col s3">
         <input type="text" #country>
         <label>Country of Origin</label>
       </div>
-      <div class="input-field col s4">
-        <input type="text" #video>
-        <label>Video Embed Link</label>
-      </div>
-      <div class="input-field col s4">
+      <div class="input-field col s6">
         <input type="text" #image>
         <label>Image Url</label>
       </div>
@@ -50,7 +46,7 @@
           <label>Artist Description</label>
         </div>
       </div>
-    <button (click)="submitForm(name.value, awards.value, details.value, image.value, yearsActive.value, country.value, genre.value, video.value); name.value=''; awards.value=''; details.value=''; image.value=''; yearsActive.value=''; country.value=''; genre.value=''; video.value='';">Add</button>
+    <button (click)="submitForm(name.value, awards.value, details.value, image.value, yearsActive.value, country.value, genre.value); name.value=''; awards.value=''; details.value=''; image.value=''; yearsActive.value=''; country.value=''; genre.value='';">Add</button>
 
     <div>
       <app-home></app-home>
