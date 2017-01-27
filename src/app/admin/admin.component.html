@@ -1,3 +1,53 @@
-<p>
-  admin works!
-</p>
+<div class="row">
+  <div class="formDiv">
+    <h1>Add New Songwriter</h1>
+    <h3>All fields are required</h3>
+  </div>
+</div>
+
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s12">
+        <select class="showSelect" #genre>
+          <option value="" disabled selected>Select Genre</option>
+          <option value="social justice">Classical</option>
+          <option value="medical">Jazz</option>
+          <option value="entertainment">Pop</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input type="text" #name>
+        <label>Name</label>
+      </div>
+      <div class="input-field col s6">
+        <input type="text" #awards>
+        <label>Awards</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s2">
+        <input type="text" #yearsActive>
+        <label>Years Active</label>
+      </div>
+      <div class="input-field col s2">
+        <input type="text" #country>
+        <label>Country of Origin</label>
+      </div>
+      <div class="input-field col s4">
+        <input type="text" #video>
+        <label>Video Embed Link</label>
+      </div>
+      <div class="input-field col s4">
+        <input type="text" #image>
+        <label>Image Url</label>
+      </div>
+    </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="text" #details>
+          <label>Artist Description</label>
+        </div>
+      </div>
+    <button (click)="submitForm(name.value, awards.value, details.value, image.value, yearsActive.value, country.value, genre.value, video.value); name.value=''; awards.value=''; details.value=''; image.value=''; yearsActive.value=''; country.value=''; genre.value=''; video.value='';">Add</button>

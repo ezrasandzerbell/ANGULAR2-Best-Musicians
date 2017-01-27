@@ -1,0 +1,29 @@
+{ "members": [{
+    "name": "Joao Gilberto",
+    "awards": "Grammy (Best World Music Album)",
+    "details": "Musician and Composer.",
+    "image": "../../assets/images/joao.jpeg",
+    "yearsActive": "1951 - 2015",
+    "country": "Brazil",
+    "genre": "Bossa Nova",
+    "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/PDOEkGMtjt8' frameborder='0' allowfullscreen></iframe>"
+  }, {
+    "name": "Joao Gilberto",
+    "awards": "Grammy (Best World Music Album)",
+    "details": "Musician and Composer.",
+    "image": "../../assets/images/joao.jpeg",
+    "yearsActive": "1951 - 2015",
+    "country": "Brazil",
+    "genre": "Bossa Nova",
+    "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/PDOEkGMtjt8' frameborder='0' allowfullscreen></iframe>"
+  }, {
+    "name": "Joao Gilberto",
+    "awards": "Grammy (Best World Music Album)",
+    "details": "Musician and Composer.",
+    "image": "../../assets/images/joao.jpeg",
+    "yearsActive": "1951 - 2015",
+    "country": "Brazil",
+    "genre": "Bossa Nova",
+    "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/PDOEkGMtjt8' frameborder='0' allowfullscreen></iframe>"
+  }]
+}
