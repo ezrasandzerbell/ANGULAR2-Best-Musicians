@@ -1,0 +1,27 @@
+.project-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+select {
+  display: inline-block;
+  min-width: 300px;
+  width: 40%;
+  font-size: 1.2em;
+  height: 40px;
+}
+
+.cardImageStyle {
+  height: 100%;
+}
+
+.hover:hover {
+  cursor: pointer;
+}
+
+.centerHomeHeader {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
