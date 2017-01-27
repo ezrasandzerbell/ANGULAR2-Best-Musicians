@@ -2,8 +2,8 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { MembersComponent } from './members/members.component';
 import { AdminComponent } from './admin/admin.component';
+import { MemberDetailsComponent } from './member-details/member-details.component';
 
 const appRoutes: Routes = [
   {
@@ -15,8 +15,8 @@ const appRoutes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'members',
-    component: MembersComponent
+    path: 'members/:id',
+    component: MemberDetailsComponent
   },
   {
     path: 'admin',

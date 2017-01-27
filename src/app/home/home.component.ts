@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Member } from '../members.model';
+import { Member } from '../member.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,18 +9,13 @@ import { Member } from '../members.model';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
-  members: Member[] = [
-   new Member("Joy", "Administrator",
-       "Musician and Composer.", "../../assets/images/joao.jpeg", "11/11/2011"),
-   new Member("Joy", "Administrator",
-       "Musician and Composer.", "../../assets/images/joao.jpeg", "11/11/2011"),
-   new Member("Joy", "Administrator",
-       "Musician and Composer.", "../../assets/images/joao.jpeg", "11/11/2011")
- ];
+  goToDetailPage(clickedMember: Member) {
+     this.router.navigate(['members', clickedMember.id]);
+   };
 
 }

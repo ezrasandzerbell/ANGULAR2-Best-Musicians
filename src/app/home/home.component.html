@@ -1,5 +1,5 @@
-<div *ngFor="let member of members">
-
+<div class="">
+  <h1></h1>
 </div>
 
 
@@ -8,10 +8,10 @@
     <div class="card">
       <div class="card-image hover" (click)="goToDetailPage(project)">
         <img src={{member.image}} class="cardImageStyle">
-        <span class="card-title">{{member.name}}</span>
       </div>
       <div class="card-content">
-        <h5>{{member.role}} / Member Since: {{member.memberSince}}</h5>
+        <span class="card-title">{{member.name}}</span>
+        <h5>{{member.country}} / {{member.yearsActive}}</h5>
         <p>{{member.description}}</p>
       </div>
       <div class="card-action">
