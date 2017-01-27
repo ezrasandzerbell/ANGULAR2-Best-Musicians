@@ -19,7 +19,11 @@ export class EditMemberComponent implements OnInit {
     this.memberService.updateMember(memberToUpdate);
     this.editFormShow = false;
   }
-
+  beginDeletingMember(memberToDelete){
+    if(confirm("Are you sure you want to delete this item from the inventory?")){
+      this.memberService.deleteMember(memberToDelete);
+    }
+  }
   editFormShow = false;
 
   editClicked() {
